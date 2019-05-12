@@ -1,0 +1,10 @@
+randomize=false&startupMaxReconnectAttempts=1&jms.watchTopicAdvisories=false&jms.useAsyncSend=true&jms.prefetchPolicy.all=1
+  maxConnections: 10
+  maximumActiveSession: 15
+  maximumRedeliveries: 5
+  maximumRedeliveryDelay: 600000
+  opportunityPayloadPostTopic: ORDERMANAGEMENT.T.QUALIFY.PROCESS.QUALIFY.EVENT.PROF4
+  producerBrokerURL: failover:(nio://amq-ordermanagement-tst1.jbhunt.com:61617,nio://amq-ordermanagement-tst2.jbhunt.com:61617)?randomize=false&startupMaxReconnectAttempts=1&jms.watchTopicAdvisories=false&jms.useAsyncSend=true&jms.prefetchPolicy.all=1
+batch:
+  initializer:
+    enabled: false
