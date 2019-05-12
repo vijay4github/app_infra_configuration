@@ -1,4 +1,4 @@
-randomize=false&startupMaxReconnectAttempts=1&jms.watchTopicAdvisories=false&jms.useAsyncSend=true&jms.prefetchPolicy.all=1
+randomize: 
   maxConnections: 10
   maximumActiveSession: 15
   maximumRedeliveries: 5
