@@ -1,10 +1,16 @@
-randomize: 
-  maxConnections: 10
-  maximumActiveSession: 15
-  maximumRedeliveries: 5
-  maximumRedeliveryDelay: 600000
-  opportunityPayloadPostTopic: ORDERMANAGEMENT.T.QUALIFY.PROCESS.QUALIFY.EVENT.PROF4
-  producerBrokerURL: failover:(nio://amq-ordermanagement-tst1.jbhunt.com:61617,nio://amq-ordermanagement-tst2.jbhunt.com:61617)?randomize=false&startupMaxReconnectAttempts=1&jms.watchTopicAdvisories=false&jms.useAsyncSend=true&jms.prefetchPolicy.all=1
-batch:
-  initializer:
-    enabled: false
+server:
+  port: 8083
+  servlet:
+    context-path: /employeeservices
+spring:
+  application:
+    name: ws-employeeservice
+  cloud:
+    config:
+      uri: http://localhost:8082/
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+global: 
+  name: vijaykumar
