@@ -4,8 +4,7 @@ FinanceBusinessUnitServiceOffering:
     DCSDedicated: DCS
     DCSFinalMile: DCS
     ICSBrokerage: ICS
-    ICSFlatbed: ICS
-    ICSLTL: ICSLTL
+    ICSFlatbed: LTL
     ICSMaritime: ICS
     ICSReefer: ICS
     JBIBackhaul: IMBH
