@@ -9,7 +9,6 @@ FinanceBusinessUnitServiceOffering:
     ICSMaritime: ICS
     ICSReefer: ICS
     JBIBackhaul: IMBH
-    JBIIntermodal: IM
     JBTOTR: OTR
 activemq:
   concurrentConsumers: 15
